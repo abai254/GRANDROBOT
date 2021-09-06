@@ -55,9 +55,9 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 `Hey There! My name is` *Aiger Akabane* ! https://telegra.ph/file/11e14d91e18dfe8b2badb.jpg
 
-`I am an Anime Themed group management bot.
+I am an Anime Themed group management bot.
 
-You can find my list of available commands with! Hit` *🔐Commands*   
+You can find my list of available commands with! Hit *🔐Commands*   
 """
 
 buttons = [
@@ -95,7 +95,7 @@ InlineKeyboardButton(
 
 HELP_STRINGS = """
 Hey there! My name is [Aiger Akabane]("https://telegra.ph/file/11e14d91e18dfe8b2badb.jpg") 
-I'm An Anime Themed Group Manager Bot and help admins to manage their groups with Some Powerful Features! `Have a look at the following for an idea of some of the things I can help you with.`"""
+I'm An Anime Themed Group Manager Bot and help admins to manage their groups with Some Powerful Features! Have a look at the following for an idea of some of the things I can help you with."""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!. But We don't want donation."""
 
@@ -161,7 +161,7 @@ def send_help(chat_id, text, keyboard=None):
 @run_async
 def test(update: Update, context: CallbackContext):
     # pprint(eval(str(update)))
-    # update.effective_message.reply_text("Hola tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN)
+    # update.effective_message.reply_text("Hola tester! _I_ *have* markdown", parse_mode=ParseMode.MARKDOWN)
     update.effective_message.reply_text("This person edited a message")
     print(update.effective_message)
 
@@ -207,7 +207,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_photo(
-            EMILIA_IMG, caption= "Aiger is Here For You\nI am Awake Since:` <code>{}</code>".format(
+            EMILIA_IMG, caption= "Aiger is Here For You\nI am Awake Since: <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
