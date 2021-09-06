@@ -53,7 +53,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hey There! My name is` *Aiger Akabane* ! [🧑🏻‍💻](https://telegra.ph/file/2f3b44fe102dfdb2e3630.jpg) `My name is` *SHU KURENAI*
+`Hey There! My name is` *Aiger Akabane* ! https://telegra.ph/file/11e14d91e18dfe8b2badb.jpg
 
 `I am an Anime Themed group management bot.
 
@@ -63,44 +63,41 @@ You can find my list of available commands with! Hit` *🔐Commands*
 buttons = [
     [
         InlineKeyboardButton(
-            text="[ADD SHU KURENAI TO YOUR GROUP]",url="http://t.me/ShuKurenaithebot?startgroup=true"),
+            text="[ADD AIGER AKABANE TO YOUR GROUP]",url="http://t.me/AigerAkabaneRobot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(
-              text="🔐 Command & Help", callback_data="help_back"),
+              text="🔐 Commands", callback_data="help_back"),
      
     ],
     [
         InlineKeyboardButton(
-            text="[ UPDATES CHANNEL ]", url="https://t.me/AigerAkabaneUpdates"),
+            text="[📢 Updates]", url="https://t.me/AigerAkabaneUpdates"),
     ],
     [
         InlineKeyboardButton(
-            text="[ SUPPORT GROUP ]", url="https://t.me/AigerAkabaneSupport"),
+            text="[📰 Logs ]", url="https://t.me/AigerAkabaneLogs"),
           
 
 
 InlineKeyboardButton(
-            text="[ CHECK MY FRIEND ]", url="http://t.me/VALTAOITHEBOT"
+            text="[🐱 Support]", url="http://t.me/AigerAkabaneSupport"
         ),
 
     ],
     [
         InlineKeyboardButton(
-                    text="[ ✘BOT Cʀᴇᴀᴛᴇʀ✘ ]", url="https://t.me/Rohith_no_1"
+                    text="[ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ]", url="https://t.me/AigerAkabaneUpdates"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-`Hey there! My name is` [SHU KURENAI]("https://telegra.ph/file/2f3b44fe102dfdb2e3630.jpg") 
-I'm a Half Elf and help admins manage their groups with Some Powerful Features! `Have a look at the following for an idea of some of the things I can help you with.`"""
+Hey there! My name is [Aiger Akabane]("https://telegra.ph/file/11e14d91e18dfe8b2badb.jpg") 
+I'm An Anime Themed Group Manager Bot and help admins to manage their groups with Some Powerful Features! `Have a look at the following for an idea of some of the things I can help you with.`"""
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paytm](#) or by contacting @Rohith_no_1\
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at ."""
+DONATE_STRING = """Heya, glad to hear you want to donate!. But We don't want donation."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -210,17 +207,14 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_photo(
-            EMILIA_IMG, caption= "`Emilia is Here For You❤\nI am Awake Since:` <code>{}</code>".format(
+            EMILIA_IMG, caption= "Aiger is Here For You\nI am Awake Since:` <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="[ ✘Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ✘ ]", url="https://t.me/pigasusSupport")
-                  ],
-                  [
-                  InlineKeyboardButton(text="[ ✘Cʀᴇᴀᴛᴇʀ✘ ]", url="https://t.me/Rohith_no_1")
+                  InlineKeyboardButton(text="[ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ]", url="https://t.me/AigerAkabaneUpdates")
                   ]
                 ]
             ),
@@ -388,8 +382,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..👸 I'm *SHU KURENAI*
-                 \nHere is the [Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ](https://t.me/pigasusSupport) .""",
+            text=""" Hi..👸 I'm *Aiger Akabane*
+                 \nHere is the [ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ](https://t.me/AigerAkabaneUpdates) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
