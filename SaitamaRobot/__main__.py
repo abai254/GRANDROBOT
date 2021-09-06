@@ -53,51 +53,58 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hey There! My name is` Aiger Akabane !
+`Hey There!` ! [🧑🏻‍💻](https://telegra.ph/file/2f3b44fe102dfdb2e3630.jpg) `My name is` *SHU KURENAI*
 
-I am an Anime Themed group management bot.
+`I am an cartoon Themed group management bot.
 
-You can find my list of available commands with! Hit *🔐Commands*   
+Managed by Pigasus Updates for Your Telegram Group
+
+Join @PigasusUpdates & @PigasusSupport.
+
+You can find my list of available commands with! Hit` *🔐Commands*   
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="[ADD AIGER AKABANE TO YOUR GROUP]",url="http://t.me/AigerAkabaneRobot?startgroup=true"),
+            text="[ADD SHU KURENAI TO YOUR GROUP]",url="http://t.me/ShuKurenaithebot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(
-              text="🔐 Commands", callback_data="help_back"),
+              text="🔐 Command & Help", callback_data="help_back"),
      
     ],
     [
         InlineKeyboardButton(
-            text="[📢 Updates]", url="https://t.me/AigerAkabaneUpdates"),
+            text="[ UPDATE CHANNEL ]", url="https://t.me/pigasusUpdates"),
     ],
     [
         InlineKeyboardButton(
-            text="[📰 Logs ]", url="https://t.me/AigerAkabaneLogs"),
+            text="[ SUPPORT CHAT ]", url="https://t.me/pigasusSupport"),
           
 
 
 InlineKeyboardButton(
-            text="[🐱 Support]", url="http://t.me/AigerAkabaneSupport"
+            text="[ CHECK MY FRIEND ]", url="http://t.me/VALTAOITHEBOT"
         ),
 
     ],
     [
         InlineKeyboardButton(
-                    text="[ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ]", url="https://t.me/AigerAkabaneUpdates"
+                    text="[ ✘BOT Cʀᴇᴀᴛᴇʀ✘ ]", url="https://t.me/Rohith_no_1"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-Hey there! My name is [Aiger Akabane]("https://telegra.ph/file/11e14d91e18dfe8b2badb.jpg") 
-I'm An Anime Themed Group Manager Bot and help admins to manage their groups with Some Powerful Features! Have a look at the following for an idea of some of the things I can help you with."""
+`Hey there! My name is` [SHU KURENAI]("https://telegra.ph/file/2f3b44fe102dfdb2e3630.jpg") 
+I'm a Half Elf and help admins manage their groups with Some Powerful Features! `Have a look at the following for an idea of some of the things I can help you with.`"""
 
-DONATE_STRING = """Heya, glad to hear you want to donate!. But We don't want donation."""
+DONATE_STRING = """Heya, glad to hear you want to donate!
+ You can support the project via [Paytm](#) or by contacting @Rohith_no_1\
+ Supporting isnt always financial! \
+ Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -161,7 +168,7 @@ def send_help(chat_id, text, keyboard=None):
 @run_async
 def test(update: Update, context: CallbackContext):
     # pprint(eval(str(update)))
-    # update.effective_message.reply_text("Hola tester! _I_ *have* markdown", parse_mode=ParseMode.MARKDOWN)
+    # update.effective_message.reply_text("Hola tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN)
     update.effective_message.reply_text("This person edited a message")
     print(update.effective_message)
 
@@ -207,14 +214,17 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_photo(
-            EMILIA_IMG, caption= "Aiger is Here For You\nI am Awake Since: <code>{}</code>".format(
+            EMILIA_IMG, caption= "`Emilia is Here For You❤\nI am Awake Since:` <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="[ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ]", url="https://t.me/AigerAkabaneUpdates")
+                  InlineKeyboardButton(text="[ ✘Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ✘ ]", url="https://t.me/pigasusSupport")
+                  ],
+                  [
+                  InlineKeyboardButton(text="[ ✘Cʀᴇᴀᴛᴇʀ✘ ]", url="https://t.me/Rohith_no_1")
                   ]
                 ]
             ),
@@ -382,8 +392,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..👸 I'm *Aiger Akabane*
-                 \nHere is the [ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ](https://t.me/AigerAkabaneUpdates) .""",
+            text=""" Hi..👸 I'm *SHU KURENAI*
+                 \nHere is the [Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ](https://t.me/pigasusSupport) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -741,4 +751,3 @@ if __name__ == '__main__':
     telethn.start(bot_token=TOKEN)
     pgram.start()
     main()
-
