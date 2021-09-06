@@ -53,13 +53,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hey There!` ! [🧑🏻‍💻](https://telegra.ph/file/2f3b44fe102dfdb2e3630.jpg) `My name is` *SHU KURENAI*
+`Hey There! My name is` *Aiger Akabane* ! [🧑🏻‍💻](https://telegra.ph/file/2f3b44fe102dfdb2e3630.jpg) `My name is` *SHU KURENAI*
 
-`I am an cartoon Themed group management bot.
-
-Managed by Pigasus Updates for Your Telegram Group
-
-Join @PigasusUpdates & @PigasusSupport.
+`I am an Anime Themed group management bot.
 
 You can find my list of available commands with! Hit` *🔐Commands*   
 """
@@ -76,11 +72,11 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="[ UPDATE CHANNEL ]", url="https://t.me/pigasusUpdates"),
+            text="[ UPDATES CHANNEL ]", url="https://t.me/AigerAkabaneUpdates"),
     ],
     [
         InlineKeyboardButton(
-            text="[ SUPPORT CHAT ]", url="https://t.me/pigasusSupport"),
+            text="[ SUPPORT GROUP ]", url="https://t.me/AigerAkabaneSupport"),
           
 
 
