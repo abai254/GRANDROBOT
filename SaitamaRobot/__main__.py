@@ -53,7 +53,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hey There! My name is` *Aiger Akabane* ! https://telegra.ph/file/11e14d91e18dfe8b2badb.jpg
+`Hey There! My name is` Aiger Akabane !
 
 I am an Anime Themed group management bot.
 
