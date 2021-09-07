@@ -53,13 +53,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`Hey There!` ! [🧑🏻‍💻](https://telegra.ph/file/2f3b44fe102dfdb2e3630.jpg) `My name is` *SHU KURENAI*
+`Hey There!` ! [👨‍💻](https://telegra.ph/file/11e14d91e18dfe8b2badb.jpg) `My name is` *Aiger Akabane*
 
-`I am an cartoon Themed group management bot.
-
-Managed by Pigasus Updates for Your Telegram Group
-
-Join @PigasusUpdates & @PigasusSupport.
+`I am Anime Themed group management bot.
 
 You can find my list of available commands with! Hit` *🔐Commands*   
 """
@@ -67,7 +63,7 @@ You can find my list of available commands with! Hit` *🔐Commands*
 buttons = [
     [
         InlineKeyboardButton(
-            text="[ADD SHU KURENAI TO YOUR GROUP]",url="http://t.me/ShuKurenaithebot?startgroup=true"),
+            text="[Add Aiger Akabane To Your Group]",url="http://t.me/AigerAkabaneRobot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(
@@ -76,29 +72,29 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="[ UPDATE CHANNEL ]", url="https://t.me/pigasusUpdates"),
+            text="[ 📢 UPDATES ]", url="https://t.me/AigerAkabaneUpdates"),
     ],
     [
         InlineKeyboardButton(
-            text="[ SUPPORT CHAT ]", url="https://t.me/pigasusSupport"),
+            text="[ 🐱 SUPPORT CHAT ]", url="https://t.me/AigerAkabaneSupport"),
           
 
 
 InlineKeyboardButton(
-            text="[ CHECK MY FRIEND ]", url="http://t.me/VALTAOITHEBOT"
+            text="[ 📰 LOGS ]", url="http://t.me/VALTAOITHEBOT"
         ),
 
     ],
     [
         InlineKeyboardButton(
-                    text="[ ✘BOT Cʀᴇᴀᴛᴇʀ✘ ]", url="https://t.me/Rohith_no_1"
+                    text="[ Source Code ]", url="https://t.me/AigerAkabaneUpdates"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-`Hey there! My name is` [SHU KURENAI]("https://telegra.ph/file/2f3b44fe102dfdb2e3630.jpg") 
+`Hey there! My name is` [Aiger Akabane]("https://telegra.ph/file/11e14d91e18dfe8b2badb.jpg") 
 I'm a Half Elf and help admins manage their groups with Some Powerful Features! `Have a look at the following for an idea of some of the things I can help you with.`"""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
@@ -214,17 +210,14 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_photo(
-            EMILIA_IMG, caption= "`Emilia is Here For You❤\nI am Awake Since:` <code>{}</code>".format(
+            EMILIA_IMG, caption= "`Aiger Akabane is Here For You\nI am Awake Since:` <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="[ ✘Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ✘ ]", url="https://t.me/pigasusSupport")
-                  ],
-                  [
-                  InlineKeyboardButton(text="[ ✘Cʀᴇᴀᴛᴇʀ✘ ]", url="https://t.me/Rohith_no_1")
+                  InlineKeyboardButton(text="[ Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ ]", url="https://t.me/AigerAkabaneSupport")
                   ]
                 ]
             ),
@@ -359,14 +352,14 @@ def gabi_about_callback(update, context):
     query = update.callback_query
     if query.data == "gabi_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *SHU KURENAI*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *Aiger Akabane*, a powerful group management bot built to help you manage your group easily.
                  \n❍ I can restrict users.
                  \n❍ I can greet users with customizable welcome messages and even set a group's rules.
                  \n❍ I have an advanced anti-flood system.
                  \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
                  \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\nIf you have any question about *SHU KURENAI*, let us know at .""",
+                 \n\nIf you have any question about *Aiger Akabane*, let us know at .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -392,8 +385,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..👸 I'm *SHU KURENAI*
-                 \nHere is the [Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ](https://t.me/pigasusSupport) .""",
+            text=""" Hi..👸 I'm *Aiger Akabane*
+                 \nHere is the [Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ](https://t.me/AigerAkabaneSupport) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -690,7 +683,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Hᴇʏ Yᴏᴜʀ SHU KURENAI Is Oɴʟɪɴᴇ")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Hᴇʏ Yᴏᴜʀ Aiger Akabane Is Oɴʟɪɴᴇ")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!"
