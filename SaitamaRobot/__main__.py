@@ -63,31 +63,31 @@ You can find my list of available commands with! Hit` *🔐Commands*
 buttons = [
     [
         InlineKeyboardButton(
-            text="[Add Aiger Akabane To Your Group]",url="http://t.me/AigerAkabaneRobot?startgroup=true"),
+            text="Add Aiger Akabane To Your Group",url="http://t.me/AigerAkabaneRobot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(
-              text="🔐 Command & Help", callback_data="help_back"),
+              text="🔐 Commands", callback_data="help_back"),
      
     ],
     [
         InlineKeyboardButton(
-            text="[ 📢 UPDATES ]", url="https://t.me/AigerAkabaneUpdates"),
+            text="📢 UPDATES", url="https://t.me/AigerAkabaneUpdates"),
     ],
     [
         InlineKeyboardButton(
-            text="[ 🐱 SUPPORT CHAT ]", url="https://t.me/AigerAkabaneSupport"),
+            text="🐱 SUPPORT CHAT", url="https://t.me/AigerAkabaneSupport"),
           
 
 
 InlineKeyboardButton(
-            text="[ 📰 LOGS ]", url="http://t.me/VALTAOITHEBOT"
+            text="📰 LOGS", url="http://t.me/VALTAOITHEBOT"
         ),
 
     ],
     [
         InlineKeyboardButton(
-                    text="[ Source Code ]", url="https://t.me/AigerAkabaneUpdates"
+                    text="Source Code", url="https://t.me/AigerAkabaneUpdates"
         ),
     ],
 ]
@@ -95,12 +95,9 @@ InlineKeyboardButton(
 
 HELP_STRINGS = """
 `Hey there! My name is` [Aiger Akabane]("https://telegra.ph/file/11e14d91e18dfe8b2badb.jpg") 
-I'm a Half Elf and help admins manage their groups with Some Powerful Features! `Have a look at the following for an idea of some of the things I can help you with.`"""
+I Help to admins manage their groups with Some Powerful Features! `Have a look at the following for an idea of some of the things I can help you with.`"""
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project via [Paytm](#) or by contacting @Rohith_no_1\
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at ."""
+DONATE_STRING = """Heya, glad to hear you want to donate! But we don't want donation."""
 
 IMPORTED = {}
 MIGRATEABLE = []
