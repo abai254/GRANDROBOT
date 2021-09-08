@@ -455,7 +455,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="◀️", callback_data="help_prev")], [InlineKeyboardButton(text="Back", callback_data="help_back")], [InlineKeyboardButton(text="▶️", callback_data="help_next")]]
             ),
         )
 
