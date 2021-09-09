@@ -41,6 +41,6 @@ __help__ = """
 
 __mod_name__ = "GITHUB"
 
-GITHUB_HANDLER = DisableAbleCommandHandler("git", github)
+github_handle = DisableAbleCommandHandler("git", github)
 
-dispatcher.add_handler(GITHUB_HANDLER)
+dispatcher.add_handler(github_handle)
