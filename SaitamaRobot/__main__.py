@@ -96,7 +96,10 @@ InlineKeyboardButton(
 HELP_STRINGS = """
 Hᴇʏ ᴛʜᴇʀᴇ! Mʏ Nᴀᴍᴇ Is [Aiger Akabane]("https://telegra.ph/file/11e14d91e18dfe8b2badb.jpg") 
 I ʜᴇʟᴘ ᴀᴅᴍɪɴs ᴛᴏ ᴍᴀɴᴀɢᴇ ᴛʜᴇɪʀ ɢʀᴏᴜᴘs ᴡɪᴛʜ Sᴏᴍᴇ Pᴏᴡᴇʀғᴜʟ Fᴇᴀᴛᴜʀᴇs! Hᴀᴠᴇ ᴀ ʟᴏᴏᴋ ᴀᴛ ᴛʜᴇ ғᴏʟʟᴏᴡɪɴɢ ғᴏʀ ᴀɴ ɪᴅᴇᴀ ᴏғ sᴏᴍᴇ ᴏғ ᴛʜᴇ ᴛʜɪɴɢs I ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴡɪᴛʜ.
-DONATE_STRING = """Heya, glad to hear you want to donate! But we don't want donation."""
+"""
+
+DONATE_STRING = """Heya, glad to hear you want to donate! But we don't want donation.
+"""
 
 IMPORTED = {}
 MIGRATEABLE = []
