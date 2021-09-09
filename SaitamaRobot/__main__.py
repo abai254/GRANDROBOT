@@ -81,7 +81,7 @@ buttons = [
 
 
 InlineKeyboardButton(
-            text="📰 LOGS", url="http://t.me/VALTAOITHEBOT"
+            text="📰 LOGS", url="http://t.me/AigerAkabaneLogs"
         ),
 
     ],
@@ -94,9 +94,8 @@ InlineKeyboardButton(
 
 
 HELP_STRINGS = """
-`Hey there! My name is` [Aiger Akabane]("https://telegra.ph/file/11e14d91e18dfe8b2badb.jpg") 
-I Help to admins manage their groups with Some Powerful Features! `Have a look at the following for an idea of some of the things I can help you with.`"""
-
+Hᴇʏ ᴛʜᴇʀᴇ! Mʏ Nᴀᴍᴇ Is [Aiger Akabane]("https://telegra.ph/file/11e14d91e18dfe8b2badb.jpg") 
+I ʜᴇʟᴘ ᴀᴅᴍɪɴs ᴛᴏ ᴍᴀɴᴀɢᴇ ᴛʜᴇɪʀ ɢʀᴏᴜᴘs ᴡɪᴛʜ Sᴏᴍᴇ Pᴏᴡᴇʀғᴜʟ Fᴇᴀᴛᴜʀᴇs! Hᴀᴠᴇ ᴀ ʟᴏᴏᴋ ᴀᴛ ᴛʜᴇ ғᴏʟʟᴏᴡɪɴɢ ғᴏʀ ᴀɴ ɪᴅᴇᴀ ᴏғ sᴏᴍᴇ ᴏғ ᴛʜᴇ ᴛʜɪɴɢs I ᴄᴀɴ ʜᴇʟᴘ ʏᴏᴜ ᴡɪᴛʜ.
 DONATE_STRING = """Heya, glad to hear you want to donate! But we don't want donation."""
 
 IMPORTED = {}
