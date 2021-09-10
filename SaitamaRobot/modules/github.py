@@ -32,7 +32,7 @@ def github(bot: Bot, update: Update):
 """
     else:
         reply_text = "User not found. Make sure you entered valid username!"
-    message.reply_text(reply_text, parse_mode=ParseMode.MARKDOWN)
+    update.effective_message.reply_text(reply_text, parse_mode=ParseMode.MARKDOWN)
 
 
 __help__ = """
