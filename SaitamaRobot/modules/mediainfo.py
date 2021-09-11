@@ -4,8 +4,6 @@ from datetime import datetime as dt
 
 from . import *
 
-
-@run_async
 async def mi(e):
     r = await e.get_reply_message()
     if not (r and r.media):
