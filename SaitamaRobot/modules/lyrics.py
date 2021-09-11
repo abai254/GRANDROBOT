@@ -4,6 +4,8 @@ import lyricsgenius
 
 from SaitamaRobot.modules.disable import DisableAbleCommandHandler
 
+from SaitamaRobot import dispatcher
+
 async def lyrics(event):  # sourcery no-metrics
     "To fetch song lyrics"
     
