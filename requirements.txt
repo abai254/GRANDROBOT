@@ -37,6 +37,7 @@ gtts
 nekos.py
 fontTools
 typing
+lyricsgenius
 tswift
 cachetools
 pyowm
