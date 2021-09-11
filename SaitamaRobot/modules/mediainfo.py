@@ -6,7 +6,7 @@ from . import *
 
 
 @run_async
-def mi(e):
+async def mi(e):
     r = await e.get_reply_message()
     if not (r and r.media):
         return await eod(e, "`Reply to any media`")
