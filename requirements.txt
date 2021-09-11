@@ -8,12 +8,16 @@ python-telegram-bot==12.8
 envparse
 faker
 psycopg2-binary
+shuthil
 feedparser
+cv2
 pynewtonmath
+PIL
 spongemock
 zalgo-text
 geopy
 nltk
+os
 psutil
 aiohttp>=2.2.5
 Pillow>=4.2.0
@@ -69,4 +73,4 @@ PyDictionary==2.0.1
 youtube-search-python
 secureme
 pytube
-.
+
