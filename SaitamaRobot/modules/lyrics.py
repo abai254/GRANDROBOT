@@ -58,6 +58,7 @@ async def lyrics(event):  # sourcery no-metrics
                 )
             songtitle = response["hits"][songno - 1]["result"]["title"]
             result += f"`{genius.search_song(songtitle).lyrics}`"
+
             __help__ = """
              /lyrics- 
             `-l`: to get list of search lists.
