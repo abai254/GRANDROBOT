@@ -1,11 +1,13 @@
 future
 emoji
+pprint
 lxml
 beautifulsoup4
 requests
 sqlalchemy==1.3.20
 python-telegram-bot==12.8
 envparse
+json
 faker
 psycopg2-binary
 shuthil
