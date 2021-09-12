@@ -3,7 +3,7 @@ import logging
 from pyrogram import Client
 
 # from pyromod import listen
-from SaitamaRobot.config import get_int_key, get_str_key
+from SaitamaRobot.sample_config import get_int_key, get_str_key
 
 TOKEN = get_str_key("TOKEN", required=True)
 APP_ID = get_int_key("APP_ID", required=True)
