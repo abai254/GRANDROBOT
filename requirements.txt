@@ -2,6 +2,10 @@ future
 emoji
 pprint
 lxml
+glitch_this
+NumPy
+opencv-python-headless
+Pillow
 beautifulsoup4
 requests
 sqlalchemy==1.3.20
