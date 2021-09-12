@@ -1,3 +1,5 @@
+cv2
+PIL
 future
 emoji
 lxml
@@ -9,14 +11,11 @@ requests
 sqlalchemy==1.3.20
 python-telegram-bot==12.8
 envparse
-json
 faker
 psycopg2-binary
 shuthil
 feedparser
-cv2
 pynewtonmath
-PIL
 spongemock
 zalgo-text
 geopy
