@@ -16,7 +16,4 @@ pbot = Client(
     bot_token=TOKEN,
 )
 
-# disable logging for pyrogram [not for ERROR logging]
-logging.getLogger("pyrogram").setLevel(level=logging.ERROR)
-
 pbot.start()
