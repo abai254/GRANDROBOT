@@ -8,6 +8,11 @@ def get_user_list(config, key):
               'r') as json_file:
         return json.load(json_file)[key]
 
+DEFAULTS = {
+    "LOAD_MODULES": True,
+    "DEBUG_MODE": True
+}
+
 def get_str_key(name, required=False):
     if name in DEFAULTS:
         default = DEFAULTS[name]
