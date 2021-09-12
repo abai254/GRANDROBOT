@@ -25,11 +25,11 @@ class InterceptHandler(logging.Handler):
 logging.basicConfig(handlers=[InterceptHandler()], level=logging.INFO)
 log = logging.getLogger(__name__)
 logger.add(
-    "logs/SaitamaRobot.log",
+    "logs/daisy.log",
     rotation="1 d",
     compression="tar.xz",
     backtrace=True,
     diagnose=True,
     level="INFO",
 )
-log.info("Enabled logging intro SaitamaRobot.log file.")
+log.info("Enabled logging intro daisy.log file.")
