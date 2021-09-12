@@ -1,6 +1,5 @@
 future
 emoji
-pprint
 lxml
 glitch_this
 NumPy
