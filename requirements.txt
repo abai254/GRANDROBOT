@@ -1,5 +1,4 @@
 future
-cv2
 LEGENDX
 emoji
 beautifulsoup4
