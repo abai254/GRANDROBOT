@@ -1,4 +1,4 @@
-from https://github.com/TroJanzHEX/Image-Editor/blob/main/image/edit_1.py import (
+from tg_bot.ImageEditor.edit_1 import (
     bright,
     mix,
     black_white,
@@ -6,7 +6,7 @@ from https://github.com/TroJanzHEX/Image-Editor/blob/main/image/edit_1.py import
     normal_blur,
     box_blur,
 )
-from https://github.com/TroJanzHEX/Image-Editor/blob/main/image/edit_2.py import (
+from tg_bot.ImageEditor.edit_2 import (
     circle_with_bg,
     circle_without_bg,
     sticker,
@@ -16,13 +16,13 @@ from https://github.com/TroJanzHEX/Image-Editor/blob/main/image/edit_2.py import
     pencil,
     cartoon,
 )
-from https://github.com/TroJanzHEX/Image-Editor/blob/main/image/edit_3.py import (
+from tg_bot.ImageEditor.edit_3 import (
     green_border,
     blue_border,
     black_border,
     red_border,
 )
-from https://github.com/TroJanzHEX/Image-Editor/blob/main/image/edit_4.py import (
+from tg_bot.ImageEditor.edit_4 import (
     rotate_90,
     rotate_180,
     rotate_270,
@@ -32,7 +32,7 @@ from https://github.com/TroJanzHEX/Image-Editor/blob/main/image/edit_4.py import
     removebg_plain,
     removebg_sticker,
 )
-from https://github.com/TroJanzHEX/Image-Editor/blob/main/image/edit_5.py import (
+from tg_bot.ImageEditor.edit_5 import (
     normalglitch_1,
     normalglitch_2,
     normalglitch_3,
