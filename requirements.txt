@@ -1,5 +1,10 @@
 future
 LEGENDX
+NumPy
+tgcrypto
+pyrogram
+glitch_this
+opencv-python-headless
 emoji
 beautifulsoup4
 requests
