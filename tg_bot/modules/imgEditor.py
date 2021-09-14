@@ -44,7 +44,7 @@ from tg_bot.ImageEditor.edit_5 import (
     scanlineglitch_4,
     scanlineglitch_5,
 )
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, Message
 from pyrogram import Client
 from pyrogram import filters
 
