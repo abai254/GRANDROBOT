@@ -7,8 +7,7 @@ from tg_bot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
 from tg_bot.modules.sql.users_sql import get_all_users
 from telegram import TelegramError, Update
 from telegram.error import BadRequest
-from telegram.ext import (CallbackContext, CommandHandler, Filters,
-                          MessageHandler, run_async)
+from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler, run_async
 
 USERS_GROUP = 4
 CHAT_GROUP = 5
